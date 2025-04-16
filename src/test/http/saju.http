@@ -1,0 +1,15 @@
+### 사주풀이 API 테스트
+POST {{host}}/api/saju/interpret
+Content-Type: application/json
+
+{
+  "year": 1990,
+  "month": 5,
+  "day": 15,
+  "hour": 14,
+  "gender": "남성",
+  "isSolar": true,
+  "leapMonth": false,
+  "name": "홍길동",
+  "birthplace": "서울"
+}
