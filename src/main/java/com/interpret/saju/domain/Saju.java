@@ -10,7 +10,7 @@ public record Saju(
         String gender,
         boolean isSolar,         // true: 양력, false: 음력
         boolean leapMonth,  // 윤달 여부
-        String name,             // 선택 사항
+        String name,
         String birthplace        // 선택 사항
 ) {
 
@@ -23,7 +23,7 @@ public record Saju(
         parts.add(gender);
         parts.add(String.valueOf(isSolar));
         parts.add(String.valueOf(leapMonth));
-        if (name != null && !name.isBlank()) parts.add(name);
+        parts.add(name);
         if (birthplace != null && !birthplace.isBlank()) parts.add(birthplace);
         return String.join("_", parts);
     }

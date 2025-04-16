@@ -13,8 +13,8 @@ class SajuTest {
     }
     @Test
     public void getKey_optional() {
-        Saju saju = new Saju(1990, 5, 15, 14, "남성", true, true, null, null);
-        String expectedKey = "1990_5_15_14_남성_true_true";
+        Saju saju = new Saju(1990, 5, 15, 14, "남성", true, true, "홍길동", null);
+        String expectedKey = "1990_5_15_14_남성_true_true_홍길동";
         assertEquals(expectedKey, saju.getKey());
     }
 }
