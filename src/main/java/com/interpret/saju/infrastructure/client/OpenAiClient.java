@@ -25,7 +25,7 @@ public class OpenAiClient {
     private String createPrompt(Saju saju) {
         return String.format(
                 "출생 정보:\n" +
-                        "- 생년월일: %d년 %d월 %d일 %02d시 %02d분\n" +
+                        "- 생년월일: %d년 %02d월 %02d일 %02d시 %02d분\n" +
                         "- 성별: %s\n" +
                         "- 양력 여부: %s\n" +
                         "- 윤달 여부: %s\n" +
