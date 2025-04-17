@@ -21,7 +21,7 @@ class SajuServiceTest {
 
     @Test
     public void interpret() throws Exception {
-        Saju saju = new Saju(1990, 5, 15, 14, "남성", true, false, "홍길동", null);
+        Saju saju = new Saju(1990, 5, 15, 14, 1, "남성", true, false, "홍길동", null);
         String expectedInterpretation = "테스트 사주 풀이 결과";
         Mockito.when(openAiClient.execute(saju)).thenReturn(expectedInterpretation);
         String result = service.interpret(saju);

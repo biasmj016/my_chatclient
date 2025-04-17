@@ -39,7 +39,7 @@ class SajuApiControllerTest {
 
     @Test
     void interpret() throws Exception {
-        SajuRequest request = new SajuRequest(1990, 5, 15, 14, "남성", true, true, "홍길동", "서울");
+        SajuRequest request = new SajuRequest(1990, 5, 15, 14, 1, "남성", true, true, "홍길동", "서울");
         String expectedInterpretation = "통합 테스트 사주풀이 결과";
 
         Mockito.when(sajuService.interpret(Mockito.any(Saju.class)))
